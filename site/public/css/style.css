@@ -26,11 +26,28 @@ body img {
 body li {
     /** Removendo a marcacao de LI */
     list-style: none;
+    /** Colocando em linha os menus */
+    display: inline-block;
+
+    margin-left: 25px;
+    margin-top: 18px;
+    margin-right: 30px;
+}
+header nav {
+    text-align: right;
 }
 
 body nav a {
+    color: black;
+    text-transform: uppercase;
+
+    /** Espacamento entre as letras */
+    letter-spacing: .1em;
+    font-size: 0.87em; /* 14px*/
+   
     /** Removendo o sublinhado */
     text-decoration: none;
+
 }
 
 body h1 {
