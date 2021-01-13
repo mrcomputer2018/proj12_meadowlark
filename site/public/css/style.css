@@ -2,9 +2,35 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.header {
+    width: 100%;
+    background-color: #FEC63E;
+    padding: 15px 0;
+
+    /** Fixando o cabecalho no topo */
+    position: fixed;
+    top: 0%;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+
 body img {
     width: 80px;
     margin: 10px;
+}
+
+body li {
+    /** Removendo a marcacao de LI */
+    list-style: none;
+}
+
+body nav a {
+    /** Removendo o sublinhado */
+    text-decoration: none;
 }
 
 body h1 {
