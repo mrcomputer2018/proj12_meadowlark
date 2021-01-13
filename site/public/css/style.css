@@ -3,12 +3,12 @@ body {
 }
 
 p {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
     line-height: 20px;
-    margin: 10px;
+    margin: 30px;
     text-align: center;
-    
+    font-weight: bold;
 }
 
 body img {
@@ -21,7 +21,7 @@ body img {
 
 header {
     width: 100%;
-    background-color: rgb(209, 209, 209);
+    background-color: #707070;
 }
 
 body li {
@@ -39,12 +39,12 @@ header nav {
 }
 
 body nav a {
-    color: black;
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
 
     /** Espacamento entre as letras */
-    letter-spacing: .1em;
-    font-size: 0.87em; /* 14px*/
+    letter-spacing: .2em;
+    font-size: 0.80em; /* 14px*/
 
      /** Aumentando a area de contato */
      padding: 10px;
@@ -62,16 +62,18 @@ body h1 {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: .1em;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    /**text-shadow: 1px 1px 5px #fff; */
 }
 
 body div.title {
-    background-image: url('/img/title_2.jpg');
+    height: 260px;
+    background-image: url('/img/title.jpg');
     background-size: cover;
     background-position: center;
-
 }
+
 
 body blockquote {
     padding:10px;
