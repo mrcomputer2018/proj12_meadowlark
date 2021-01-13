@@ -37,7 +37,7 @@ app.get('/about', (req,res) => {
     // 10_1 Rota nova com Handlebars
     // antes 1 era res.render('about')
     // antes 2 era res.render('about',{ fortune: randomFortune })
-   res.render('about',{ fortune: fortune.getFortune }) 
+   res.render('about',{ fortune: fortune.getFortune() }) 
 })
 
 // 4 Rota Pagina 404 personalizada
