@@ -7,6 +7,9 @@ const expressHandlebars = require('express-handlebars')
 // 2 Gerando APP
 const app = express()
 
+// Importando Fortunes
+const fortunes = require('./lib/fortune')
+
 // 9 Configuracao da view engine Handlebars
 app.engine('handlebars', expressHandlebars({
     defaultLayout: 'main'
