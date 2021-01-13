@@ -20,30 +20,29 @@ const port = process.env.PORT || 3000
 /** 7 Rotas Novas */
 // Rota GET Home
 app.get('/',(req,res) => {
-    res.type('text/plain')
-    res.send('Meadowlark Travel Home')
+    // 10 Rota nova com Handlebars
+    res.render('home')
 })
 
 // Rota GET About
 app.get('/about',(req,res) => {
-    res.type('text/plain')
-    res.send(' About Meadowlark Travel')
+   // 10_1 Rota nova com Handlebars
+   res.render('about')
 })
 
 // 4 Rota Pagina 404 personalizada
 app.use((req,res) => {
-    // Definindo o tipo de DADO
-    res.type('text/plain')
+    // 10_2 Rota nova com Handlebars
     res.status(404)
-    res.send('404 - Not Found!!!')
+    res.render('404')
 })
 
 /** 5 Rota Pagina 500 personalizada */
 app.use((err,req,res,next) => {
     console.log(err.message)
-    res.type('text/plain')
-    res.status(505)
-    res.send('500 - Erro Interno no Servidor!!!')
+    // 10_3 Rota nova com Handlebars
+    res.status(500)
+    res.render('500')
 })
 
 /** 6 Escutando a porta 3000 */
