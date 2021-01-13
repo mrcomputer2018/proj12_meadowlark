@@ -17,7 +17,7 @@ app.set('view engine', 'handlebars')
 // 3 Definindo a porta Padrao do APP
 const port = process.env.PORT || 3000
 
-// 11 Declarando caminho dos arquivos estaticos
+// 11 Declarando caminho dos arquivos estaticos - Middleware static
 app.use(express.static(__dirname + '/public'))
 
 /** 7 Rotas Novas */
