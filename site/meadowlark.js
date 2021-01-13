@@ -43,7 +43,7 @@ app.get('/about',(req,res) => {
         Math.floor(Math.random()*fortunes.length)
     ]
    // 10_1 Rota nova com Handlebars
-   res.render('about',{fortune:randomFortune})
+   res.render('about',{fortune:randomFortune}) // antes era res.render('about')
 })
 
 // 4 Rota Pagina 404 personalizada
