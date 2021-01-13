@@ -2,6 +2,7 @@
 node_modules
 
 #Outros arquivos que nao quero no repositorio
+*~
 .DS_Store
 (OSX)
 *.bak
