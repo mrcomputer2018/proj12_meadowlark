@@ -7,6 +7,15 @@ const expressHandlebars = require('express-handlebars')
 // 2 Gerando APP
 const app = express()
 
+// 12 Constante dinamica de sorteio
+const fortunes = [
+    "Vença seus medos ou eles vão te conquistar.",
+    "Os rios precisam de nascentes.",
+    "Não tenha medo do que você não conhece.",
+    "Você terá uma agradável surpresa.",
+    "Sempre que possível, mantenha as coisas simples.",
+]
+
 // 9 Configuracao da view engine Handlebars
 app.engine('handlebars', expressHandlebars({
     defaultLayout: 'main'
@@ -29,8 +38,12 @@ app.get('/',(req,res) => {
 
 // Rota GET About
 app.get('/about',(req,res) => {
+    // 13 Criando a Aleatoridade em sobre
+    const randonFortune = fortunes[
+        Math.floor(Math.random()*fortunes.length)
+    ]
    // 10_1 Rota nova com Handlebars
-   res.render('about')
+   res.render('about',{fortune:randomFortune})
 })
 
 // 4 Rota Pagina 404 personalizada
