@@ -55,6 +55,7 @@ body nav a {
 }
 
 body h1 {
+    color: #fff;
     text-align: center;
     font-size: 2em;
     line-height: 60px;
@@ -67,6 +68,9 @@ body h1 {
 
 body div.title {
     background-image: url('/img/title_2.jpg');
+    background-size: cover;
+    background-position: center;
+
 }
 
 body blockquote {
