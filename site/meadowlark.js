@@ -11,6 +11,7 @@ const app = express()
 app.engine('handlebars', expressHandlebars({
     defaultLayout: 'main'
 }))
+// Setando a engine 
 app.set('view engine', 'handlebars')
 
 // 3 Definindo a porta Padrao do APP
