@@ -4,11 +4,11 @@ const express = require('express')
 // 8 Chamando Handlebars
 const expressHandlebars = require('express-handlebars')
 
+// Importando Fortunes
+const fortune = require('./lib/fortune.js')
+
 // 2 Gerando APP
 const app = express()
-
-// Importando Fortunes
-const fortunes = require('./lib/fortune')
 
 // 9 Configuracao da view engine Handlebars
 app.engine('handlebars', expressHandlebars({
@@ -33,7 +33,7 @@ app.get('/',(req,res) => {
 // Rota GET About
 app.get('/about', (req,res) => {
     // 13 Criando a Aleatoridade em sobre
-    const randomFortune = fortunes[Math.floor(Math.random()*fortunes.length)]
+    // const randomFortune = fortunes[Math.floor(Math.random()*fortunes.length)]
     // 10_1 Rota nova com Handlebars
     // antes 1 era res.render('about')
     // antes 2 era res.render('about',{ fortune: randomFortune })
