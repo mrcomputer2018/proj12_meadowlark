@@ -30,21 +30,14 @@ app.get('/',(req,res) => {
     res.render('home')
 })
 
-// 12 Constante dinamica de sorteio
-const fortunes = [
-    "Vença seus medos ou eles vão te conquistar.",
-    "Os rios precisam de nascentes.",
-    "Não tenha medo do que você não conhece.",
-    "Você terá uma agradável surpresa.",
-    "Sempre que possível, mantenha as coisas simples.",
-]
-
 // Rota GET About
 app.get('/about', (req,res) => {
     // 13 Criando a Aleatoridade em sobre
     const randomFortune = fortunes[Math.floor(Math.random()*fortunes.length)]
     // 10_1 Rota nova com Handlebars
-   res.render('about',{ fortune: randomFortune }) // antes era res.render('about')
+    // antes 1 era res.render('about')
+    // antes 2 era res.render('about',{ fortune: randomFortune })
+   res.render('about',{ fortune: fortune.getFortune }) 
 })
 
 // 4 Rota Pagina 404 personalizada
