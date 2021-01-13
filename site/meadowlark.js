@@ -1,8 +1,17 @@
 /** 1 Chamando o Expresss */
 const express = require('express')
 
+// 8 Chamando Handlebars
+const expressHandlebars = require('express-handlebars')
+
 // 2 Gerando APP
 const app = express()
+
+// 9 Configuracao da view engine Handlebars
+app.engine('handlebars', expressHandlebars({
+    defaultLayout: 'main'
+}))
+app.set('view engine', 'handlebars')
 
 // 3 Definindo a porta Padrao do APP
 const port = process.env.PORT || 3000
