@@ -78,4 +78,6 @@ body div.title {
 body blockquote {
     padding:10px;
     text-align: center;
+    font-size: 1em;
+    letter-spacing: .2em;
 }
