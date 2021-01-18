@@ -38,9 +38,11 @@ header nav {
     text-align: right;
 }
 
+/* Estelizacao menu */
 body nav a {
-    color: gray);
+    color: gray;
     text-transform: uppercase;
+    font-weight: bold;
 
     /** Espacamento entre as letras */
     letter-spacing: .2em;
@@ -51,7 +53,13 @@ body nav a {
    
     /** Removendo o sublinhado */
     text-decoration: none;
+    transition: 0.2s;
+}
 
+body nav a:hover {
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
 body h1 {
