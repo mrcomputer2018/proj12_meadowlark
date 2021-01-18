@@ -3,4 +3,4 @@ Branco - whitesmoke
 Cinza escuro - gray
 
 Handlers.js
-Arquivo de rotas do APP
+Arquivo de manipuladores de rotas do APP
